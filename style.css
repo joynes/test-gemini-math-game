@@ -1,0 +1,149 @@
+body {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #4b0082; /* Darker Purple */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #ffd700; /* Yellow */
+}
+
+button {
+    background-color: #ffd700; /* Yellow */
+    color: #4b0082; /* Dark Purple */
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#exit-game-btn {
+    background-color: #9370db; /* Lighter Purple */
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#back-to-menu-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+#question-container {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Grimace Styles */
+#grimace-container {
+    height: 150px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#grimace {
+    width: 120px;
+    height: 120px;
+    background-color: #9370db; /* Lighter Purple */
+    border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.eye {
+    width: 15px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+}
+
+.eye.left { left: 30px; }
+.eye.right { right: 30px; }
+
+.mouth {
+    width: 60px;
+    height: 30px;
+    border: 5px solid white;
+    border-color: white transparent transparent transparent;
+    border-radius: 50% / 100% 100% 0 0;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+/* Animations */
+#grimace.happy {
+    animation: happy-bounce 0.5s ease;
+}
+
+#grimace.happy .mouth {
+    width: 50px;
+    height: 25px;
+    border: none;
+    background-color: white;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+
+@keyframes happy-bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+}
