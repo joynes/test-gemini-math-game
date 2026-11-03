@@ -10,5 +10,6 @@
     "scripts/test-grimace-gemini-browser.cjs",
     "scripts/test-math-mobile-input.cjs"
   ],
-  "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/"
+  "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
+  "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
 }
