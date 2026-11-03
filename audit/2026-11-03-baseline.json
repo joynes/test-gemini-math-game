@@ -1,0 +1,13 @@
+{
+  "game": "grimace-gemini",
+  "date": "2026-11-03",
+  "homepageCommit": "4cf29c7574fd6c803bb66dba8fb77786f5eee226",
+  "sourceHead": "f3b4d568066075a11cf7d2c43afae108a75a6b03",
+  "sourceWorktree": null,
+  "snapshotPaths": [
+    "games/grimace-gemini",
+    "scripts/test-grimace-gemini-browser.cjs",
+    "scripts/test-grimace-gemini.mjs"
+  ],
+  "status": "Baseline saved before renewed browser audit. No new verification claimed."
+}
