@@ -1,0 +1,11 @@
+{
+  "name": "grimace-gemini-web-release",
+  "private": true,
+  "scripts": {
+    "test:1": "node scripts/test-grimace-gemini-browser.cjs",
+    "test:2": "node scripts/test-math-mobile-input.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}
